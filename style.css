@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  background: linear-gradient(
+      to right,
+      rgba(255, 131, 183, 0.548),
+      rgba(163, 163, 163, 0.411),
+      rgba(100, 224, 187, 0.411)
+    )
+    fixed;
+}
+.container {
+  max-width: 500px;
+  min-width: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px 0px 20px;
+
+  height: 100vh;
+}
+
+.title {
+  font-size: 35px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.btn-restart {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 8px 0px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.603);
+  font-weight: 800;
+  letter-spacing: 5px;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.btn-restart:hover {
+  border: 2px solid rgb(75, 75, 75);
+  backdrop-filter: blur(5px);
+  background: transparent;
+  text-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+
+.btn-restart:active {
+  background-color: rgba(204, 204, 204, 0.527);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+.btn-xo {
+  aspect-ratio: 1/1;
+  border: none;
+  background: transparent;
+  font-size: 55px;
+}
+
+.btn-xo:nth-child(1) {
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+}
+.btn-xo:nth-child(2) {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+}
+.btn-xo:nth-child(3) {
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+}
+.btn-xo:nth-child(4) {
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+}
+.btn-xo:nth-child(5) {
+  border: 3px solid white;
+}
+.btn-xo:nth-child(6) {
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+.btn-xo:nth-child(7) {
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+}
+.btn-xo:nth-child(8) {
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+.btn-xo:nth-child(9) {
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+
+.btn-xo:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
